@@ -1,0 +1,48 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+//_______________________________________________________________________________________________
+
+int Unit = 9;
+int Total_Taka = 0;
+vector<int> r1, r2, r3, r4, f;
+
+//_______________________________________________________________________________________________
+
+void Print(int old_unit, int new_unit, int room){
+    Total_Taka += (new_unit - old_unit) * Unit;
+    if(room == 5){
+        cout << "___ Flat--->" << endl;
+        cout << "Old Unit --> " << old_unit << endl;
+        cout << "New Unit --> " << new_unit << endl;
+        cout << "Unit Use --> " << (new_unit - old_unit) << endl;
+        cout << "Total Taka --> " << (new_unit - old_unit) * Unit << endl << endl;
+    }else{
+        cout << "___ ROOM No." << room << " --->" << endl;
+        cout << "Old Unit --> " << old_unit << endl;
+        cout << "New Unit --> " << new_unit << endl;
+        cout << "Unit Use --> " << (new_unit - old_unit) << endl;
+        cout << "Total Taka --> " << (new_unit - old_unit) * Unit << endl << endl;
+    }
+}
+
+//_______________________________________________________________________________________________
+
+
+int main(){
+    /*3-5-24*/ r1.push_back(1452);  r2.push_back(1112);  r3.push_back(325);   r4.push_back(1029);   f.push_back(1264);
+    /*4-6-24*/ r1.push_back(1516);  r2.push_back(1190);  r3.push_back(339);   r4.push_back(1064);   f.push_back(1376);
+    /*2-7-24*/ r1.push_back(1584);  r2.push_back(1222);  r3.push_back(376);   r4.push_back(1104);   f.push_back(1538);
+
+    int len = r1.size();
+    Print(r1[len-2], r1[len-1], 1);
+    Print(r2[len-2], r2[len-1], 2);
+    Print(r3[len-2], r3[len-1], 3);
+    Print(r4[len-2], r4[len-1], 4);
+    Print(f[len-2], f[len-1], 5);
+    cout << "Total Taka --> " << Total_Taka << endl;
+    return 0;
+}
+
+
+//_______________________________________________________________________________________________
