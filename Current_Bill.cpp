@@ -7,6 +7,8 @@ int Unit = 9;
 int Total_Taka = 0;
 vector<int> r1, r2, r3, r4, f;
 
+#define pb push_back
+
 //_______________________________________________________________________________________________
 
 void Print(int old_unit, int new_unit, int room){
@@ -30,9 +32,9 @@ void Print(int old_unit, int new_unit, int room){
 
 
 int main(){
-    /*3-5-24*/ r1.push_back(1452);  r2.push_back(1112);  r3.push_back(325);   r4.push_back(1029);   f.push_back(1264);
-    /*4-6-24*/ r1.push_back(1516);  r2.push_back(1190);  r3.push_back(339);   r4.push_back(1064);   f.push_back(1376);
-    /*2-7-24*/ r1.push_back(1584);  r2.push_back(1222);  r3.push_back(376);   r4.push_back(1104);   f.push_back(1538);
+    /*3-5-24*/ r1.pb(1452);  r2.pb(1112);  r3.pb(325);   r4.pb(1029);   f.pb(1264);
+    /*4-6-24*/ r1.pb(1516);  r2.pb(1190);  r3.pb(339);   r4.pb(1064);   f.pb(1376);
+    /*2-7-24*/ r1.pb(1584);  r2.pb(1222);  r3.pb(376);   r4.pb(1104);   f.pb(1538);
 
     int len = r1.size();
     Print(r1[len-2], r1[len-1], 1);
