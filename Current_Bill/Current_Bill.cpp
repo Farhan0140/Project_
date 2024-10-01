@@ -3,7 +3,7 @@ using namespace std;
 
 //_______________________________________________________________________________________________
 
-double Unit = 9.75;
+double Unit = 9;
 int Total_Taka = 0;
 vector<int> r1, r2, r3, r4, f;
 
@@ -14,13 +14,13 @@ vector<int> r1, r2, r3, r4, f;
 void Print(int old_unit, int new_unit, int room){
     Total_Taka += (new_unit - old_unit) * Unit;
     if(room == 5){
-        cout << "___ Flat--->" << endl;
+        cout << "___ Flat ______" << endl;
         cout << "Old Unit --> " << old_unit << endl;
         cout << "New Unit --> " << new_unit << endl;
         cout << "Unit Use --> " << (new_unit - old_unit) << endl;
         cout << "Total Taka --> " << (new_unit - old_unit) * Unit << endl << endl;
     }else{
-        cout << "___ ROOM No." << room << " --->" << endl;
+        cout << "___ ROOM No." << room << " ______" << endl;
         cout << "Old Unit --> " << old_unit << endl;
         cout << "New Unit --> " << new_unit << endl;
         cout << "Unit Use --> " << (new_unit - old_unit) << endl;
@@ -36,6 +36,7 @@ int main(){
     /*4-6-24*/ r1.pb(1516);  r2.pb(1190);  r3.pb(339);   r4.pb(1064);   f.pb(1376);
     /*2-7-24*/ r1.pb(1584);  r2.pb(1222);  r3.pb(376);   r4.pb(1104);   f.pb(1538);
     /*1-8-24*/ r1.pb(1652);  r2.pb(1258);  r3.pb(418);   r4.pb(1138);   f.pb(1675);
+    /*7-9-24*/ r1.pb(1717);  r2.pb(1295);  r3.pb(466);   r4.pb(1182);   f.pb(1850);
 
     int len = r1.size();
     Print(r1[len-2], r1[len-1], 1);
