@@ -3,7 +3,7 @@ using namespace std;
 
 //_______________________________________________________________________________________________
 
-double Unit = 10;
+double Unit = 7;
 int Total_Taka = 0;
 vector<int> r1, r2, r3, r4, f;
 
