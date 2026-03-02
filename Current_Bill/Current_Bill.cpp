@@ -14,7 +14,7 @@ vector<int> r1, r2, r3, r4, f, d_f;
 void Print(int old_unit, int new_unit, int room){
     Total_Taka += (new_unit - old_unit) * Unit;
     if(room == 5 || room == 6){
-        cout << "___ Flat " << room - 4 << " ______" << endl;
+        printf("___ Flat %s ______\n", (room==5)? "UP" : "Down");
         cout << "Old Unit --> " << old_unit << endl;
         cout << "New Unit --> " << new_unit << endl;
         cout << "Unit Use --> " << (new_unit - old_unit) << endl;
@@ -53,7 +53,9 @@ int main(){
     /* 2-10-25*/    r1.pb(2352);  r2.pb(1671);  r3.pb(919);   r4.pb(1550);   f.pb(3305); d_f.pb(1178);
     /* 1-11-25*/    r1.pb(2414);  r2.pb(1702);  r3.pb(972);   r4.pb(1594);   f.pb(3498); d_f.pb(1420);
     /* 2-12-25*/    r1.pb(2425);  r2.pb(1712);  r3.pb(1030);  r4.pb(1606);   f.pb(3498); d_f.pb(1598);
-    /* 3-01-25*/    r1.pb(2437);  r2.pb(1717);  r3.pb(1060);  r4.pb(1612);   f.pb(3498); d_f.pb(1723);
+    /* 3-01-26*/    r1.pb(2437);  r2.pb(1717);  r3.pb(1060);  r4.pb(1612);   f.pb(3498); d_f.pb(1723);
+    /* 1-02-26*/    r1.pb(2441);  r2.pb(1721);  r3.pb(1090);  r4.pb(1690);   f.pb(3511); d_f.pb(1830);
+    /* 2-03-26*/    r1.pb(2448);  r2.pb(1730);  r3.pb(1134);  r4.pb(1789);   f.pb(0); d_f.pb(2010);
     
     // /* --*/    r1.pb();  r2.pb();  r3.pb();  r4.pb();   f.pb(); d_f.pb();
 
